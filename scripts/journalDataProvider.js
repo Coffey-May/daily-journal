@@ -62,9 +62,13 @@ export const getEntries = () => {
         )
 }
 
-export const updateEntry = journalId => {
+export const updateEntry = (journalId, updatedEntry) => {
     return fetch(`http://localhost:3000/entries/${journalId}`, {
-        method: "PUT"
+        method: "PUT",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(updatedEntry)
     })
         .then(getEntries)
 }

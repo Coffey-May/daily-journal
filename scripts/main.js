@@ -1,7 +1,7 @@
 import journalListComponent from "./journalListComponent.js"
 import EntryListComponent from "./JournalEntryList.js"
 import { journalhtml } from './journal.js'
-import { getEntries, saveEntries, deleteEntry } from './journalDataProvider.js'
+import { getEntries, saveEntries, deleteEntry, updateEntry } from './journalDataProvider.js'
 
 
 

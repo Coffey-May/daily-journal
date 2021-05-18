@@ -4,11 +4,11 @@
  */
 const JournalEntryComponent = (journal) => {
     return `
-        <section id="deleteEntry--${journal.id}" class="journalEntry">
-            <div>${journal.date}</div>
-            <div>${journal.concept}</div>
-            <div>${journal.entry}</div>
-            <div>${journal.mood}</div>
+        <section id="entryId--${journal.id}" class="journalEntry">
+            <div class="date">${journal.date}</div>
+            <div class="concept">${journal.concept}</div>
+            <div class="entry">${journal.entry}</div>
+            <div class="mood">${journal.mood}</div>
             <button id="deleteEntry--${journal.id}">Delete</button>
             <button id="editEntry--${journal.id}">Edit</button>
             <input type="hidden" name="entryId" id="entryId">

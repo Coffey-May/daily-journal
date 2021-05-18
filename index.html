@@ -7,43 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 
-<body>
-    <h1 class ="stretch">D  a  i  l  y &nbsp&nbspJ  o  u  r  n  a  l</h1>
-    <form action="" class="formAnim">
-        <fieldset>
-            <label for="journalDate">Date of entry</label>
-            <input type="date" name="journalDate" id="journalDate">
-        </fieldset>
-
-        <fieldset>
-            <label for="journalConcepts">Concepts covered</label>
-            <input type="text">
-        </fieldset>
-
-        <fieldset>
-            <label for="journalEntry">Journal entry</label>
-            <textarea rows="2" cols="50">
-            </textarea>
-        </fieldset>
-
-        <fieldset>
-            <label for="mood">Mood for the day</label>
-            <select>
-                <option value="ennui">Ennui</option>
-                <option value="meloncholy">Meloncholy</option>
-                <option value="manic">Manic</option>
-                <option value="happy">Happy</option>
-                <option value="ennui">Ennui</option>
-                <option value="overjoyed">Over-joyed</option>
-                <option value="gleeful">Gleeful</option>
-                <option value="despair">Despair</option>
-            </select>
-        </fieldset>
-        <button type="button">Record Journal Entry</button>
-    </form>
-
+<body id="eventHub">
+    <main class="container">
+        <section class="journalBody"></section>
+        <!-- <section class="journalEntries"></section> -->
+    </main>
+    <script type="module" src="./scripts/main.js"></script>
 </body>
 
 </html>
