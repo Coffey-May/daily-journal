@@ -24,8 +24,8 @@ export const journalhtml = () => {
 
     <fieldset>
         <label for="mood">Mood for the day</label>
-        <select id="select" >
-            <option value=""></option>
+        <select id="select" value="">
+         
             <option value="happy">Happy</option>
             <option value="meloncholy">Meloncholy</option>
             <option value="manic">Manic</option>
